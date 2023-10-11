@@ -1,7 +1,10 @@
 package com.amigoscode.customer;
 
+import org.springframework.stereotype.Service;
+
 import java.util.List;
 
+@Service
 public class CustomerService {
 
     private final CustomerDAO customerDAO;
@@ -20,5 +23,4 @@ public class CustomerService {
                         "No exist Customer with ID  [%s] not found".formatted(id)
                 ));
     }
-
 }
